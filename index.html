@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="bg">
+	<head>
+	<meta charset="utf-8">
+	<title>Ние обичаме спагети</title>
+	
+	<!-- Започваме да описваме стил -->
+	<style>
+		.zaglavie{
+
+			/*Слагаме картинка за фон*/
+			background: url(zagl.jpg)
+			no-repeat center center/cover;
+			height: 850px;
+		}
+		nav{
+			/*Настройваме местоположението на менюто */
+			text-align: right;
+			margin-right: 20px;
+		}
+	/*Подреждаме елементите на менюто */
+
+		nav > ul >li{
+			display: inline-block;
+			font-size: 18pt;
+			color: #fff;
+			padding: 15px;
+		}
+	/*Подреждаме шрифта и цвета на менюто */
+		nav ul li a{
+			color: white;
+			padding: 3px;
+			text-decoration: none;
+		}
+	/*Подреждаме шрифта и цвета на менюто когато мишката е върху него - :HOVER  */
+		nav ul li a:hover{
+			color: orange;
+			border-bottom: 2px solid orange;
+			padding: 3px;
+		}
+	/*Даваме стил на заглавиевто - размер, дебелина, цвят, местоположение z*/
+		.zaglavie h1{
+			font-size: 90px;
+			font-weight: 300;
+			color: white;
+			text-align: center;
+			padding-top:200px;
+		}
+		footer{
+			height: 150px;
+			background-color: orange;
+		}
+/*	От тук започват новите стилове*/
+			.layouts{
+			    display: flex;
+			    flex-flow: wrap;
+			    justify-content:space-around;
+			}
+			.layouts article{
+			    margin-bottom: 60px;
+			    background: white;
+			    border: 2px solid orange;
+			    border-radius: 5px;
+			    padding: 10 0 10 20;
+			}
+
+			.layouts div :hover{
+				box-shadow: beige;
+			}
+
+			.layouts article img{
+				width: 360px;
+			    border-top-left-radius:5px ;
+			    border-top-right-radius:5px ;
+
+			}
+			.pasta {
+			    font-weight:bold ;
+			    padding: 20px;
+			    display: inline;
+			}
+			.price{
+			    padding: 20px;
+			    display: inline-block;
+			    font-size: 20px;
+			}
+			.offers{
+			    width: 90%;
+			    margin: auto;
+			    text-align: center;
+			}
+			.vidove{
+			    display: flex;
+			    justify-content: space-between;
+
+
+
+	</style>
+	<!-- Край на стила -->
+	
+	</head>
+<!-- Старт на съдържанието на сайта -->
+	<body>
+		<header class="zaglavie">
+			<div>
+			<!-- Навигация -->
+				<nav>
+					<ul>
+						<!-- Елементи на менюто -->
+						<li><a href="#">Начало</a></li>
+						<li><a href="#">Проекти</a></li>
+						<li><a href="#">Контакти</a></li>
+					</ul>
+				</nav>
+			</div>
+
+			<!-- Заглавие -->
+			<div>
+				<h1>НИЕ ОБИЧАМЕ СПАГЕТИ</h1>
+			</div>
+		</header>
+
+<!-- ОТ ТУК ЗАПОЧВА ОСНОВНАТА ЧАСТ НА САЙТА -->
+	<main>
+	    <section class="offers">
+	        <h2>Видове спагети</h2>
+	        <h3>Открийте невероятния вкус на италианската паста</h3>
+	        <section class="layouts">
+	        	<div>
+	            <article>
+	                <img src="tagliateli-porchini1.jpg" alt="offer">
+	                <div class="vidove">
+	                    <div class="pasta">Талиатели</div>
+	                    <div class="price">$8,60</div>
+	                </div>
+	            </article>
+	        </div>
+
+				<article>
+	                <img src="routepasta.jpg" alt="offer">
+	                <div class="vidove">
+	                    <div class="pasta">Руоте</div>
+	                    <div class="price">$10,00</div>
+	                </div>
+	            </article>
+
+	            <article>
+	                <img src="farfalle-eggplant.jpg" alt="offer">
+	                <div class="vidove">
+	                    <div class="pasta">Фарфале</div>
+	                    <div class="price">$12,00</div>
+	                </div>
+
+	            </article>
+
+	        </section>
+
+	       <section class="layouts">	        
+	          <article>
+	                <img src="spaghetti-photo1.jpg" alt="offer">
+	                <div class="vidove">
+	                    <div class="pasta">Спагети</div>
+	                    <div class="price">$20,00</div>
+	                </div>
+
+	            </article>
+
+	            <article>
+	                <img src="fusilli-primavera.jpg" alt="offer">
+	                <div class="vidove">
+	                    <div class="pasta">Фусили</div>
+	                    <div class="price">$11,80</div>
+	                </div>
+
+	            </article>
+
+	            <article>
+	                <img src="fetuccine-tomato-parmesan1.jpg" alt="offer">
+	                <div class="vidove">
+	                    <div class="pasta">Фетучини</div>
+	                    <div class="price">$21,20</div>
+	                </div>
+	            </article>
+	        </section>
+
+	    </section>
+	</main>
+
+
+	</body>
+	<footer>
+		<div>
+		<h3> Емил Атанасов, 8а </h3>
+			
+		</div>
+	</footer>
+</html>
